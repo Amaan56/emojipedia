@@ -7,6 +7,14 @@ const sampleData = {
   '😂': 'Face with Tears of Joy',
   '🙃': 'Upside-Down Face',
   '😉': 'Winking Face',
+  '🤩': 'Star-Struck',
+  '😋': 'Face Savoring Food',
+  '😶': 'Face Without Mouth',
+  '🙄': 'Face with Rolling Eyes',
+  '👶': 'Baby',
+  '🧒': 'Child',
+  '👦': 'Boy',
+  '👧': 'Girl',
 };
 
 const sampleDataKeys = Object.keys(sampleData);
@@ -14,8 +22,13 @@ const sampleDataKeys = Object.keys(sampleData);
 function App() {
   const [searchResult, setSearchResult] = useState('');
 
-  const displayResult = (e) => {
-    setSearchResult(e.target.value);
+  const displayResult = (searchItemKey) => {
+    const searchItem = sampleData[searchItemKey];
+    if (searchItem === undefined) {
+      setSearchResult('');
+    } else {
+      setSearchResult(searchItem);
+    }
   };
 
   return (
@@ -29,14 +42,18 @@ function App() {
           <input
             className="search-input"
             placeholder="Enter the emoji to be searched"
-            onChange={displayResult}
+            onChange={(e) => displayResult(e.target.value)}
           />
         </section>
         <section className="search-result">{searchResult}</section>
         <section className="emoji-options">
           {sampleDataKeys.map((sampleData, i) => {
             return (
-              <span key={i} className="emoji-option">
+              <span
+                key={i}
+                className="emoji-option"
+                onClick={(e) => displayResult(sampleData)}
+              >
                 {sampleData}
               </span>
             );
