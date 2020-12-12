@@ -60,6 +60,9 @@ function App() {
           })}
         </section>
       </main>
+      <footer>
+        <p>Made with ❤️ by Amaan</p>
+      </footer>
     </div>
   );
 }

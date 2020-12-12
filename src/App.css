@@ -46,6 +46,7 @@ nav {
   display: block;
   margin: auto;
   width: 35vw;
+
   background-color: var(--secondary-color);
   border-radius: 1rem;
 }
@@ -60,7 +61,22 @@ nav {
   outline: 2px solid var(--primary-color);
 } */
 
-@media only screen and (max-width: 450px) {
+footer {
+  background-color: var(--primary-color);
+  position: fixed;
+  bottom: 0;
+  padding: 1rem 0;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+footer > p {
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
   .search-input {
     font-size: 10px;
   }
