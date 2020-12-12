@@ -59,3 +59,16 @@ nav {
   border: 2px solid var(--primary-color);
   outline: 2px solid var(--primary-color);
 } */
+
+@media only screen and (max-width: 450px) {
+  .search-input {
+    font-size: 10px;
+  }
+  .emoji-options {
+    width: 80vw;
+  }
+  .emoji-option {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
