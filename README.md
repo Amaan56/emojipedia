@@ -1,1 +1,1 @@
-A React based application which acts as a encyclopedia for emojis
+A React based application which acts as an encyclopedia for emojis.
