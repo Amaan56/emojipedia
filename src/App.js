@@ -47,6 +47,7 @@ function App() {
         </section>
         <section className="search-result">{searchResult}</section>
         <section className="emoji-options">
+          <p>Emojis supported by us</p>
           {sampleDataKeys.map((sampleData, i) => {
             return (
               <span
