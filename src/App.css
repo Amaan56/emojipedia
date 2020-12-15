@@ -49,6 +49,7 @@ nav {
 
   background-color: var(--secondary-color);
   border-radius: 1rem;
+  padding: 0.5rem;
 }
 
 .emoji-option {

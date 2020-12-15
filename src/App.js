@@ -38,7 +38,7 @@ function App() {
       </nav>
       <main>
         <section className="search-section">
-          <img className="search-image" src="emoji.png" />
+          <img className="search-image" src="emoji.png" alt="Emoji Logo" />
           <input
             className="search-input"
             placeholder="Enter the emoji to be searched"
